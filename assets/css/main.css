@@ -1,0 +1,311 @@
+/*
+Theme Name : Compu A Vision
+Theme Coder : Seif Nageh
+PSD Designer : Salsabil Hamed
+Started At : 12/12/2021
+Ended At : 23/12/2021
+First Color : #f49547
+Second Color : #535353
+*/
+
+:root {
+    --main-color: #f49547;
+    --second-color: #535353;
+    --txt-family-head: Yi-Baiti;
+    --txt-family-text: adobeAR;
+    --transition-easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@font-face {
+    font-family: Yi-Baiti;
+    src: url(../webfonts/msyi.ttf);
+}
+
+@font-face {
+    font-family: adobeAR;
+    src: url(../webfonts/22016-adobearabic.ttf);
+}
+
+body {
+    background-color: #F5EEE4;
+    color: var(--second-color);
+    font-family: var(--txt-family-text);
+    font-size: 26px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.txt-family-head {
+    font-family: Var(--txt-family-head) !important;
+}
+
+.txt-family-text {
+    font-family: Var(--txt-family-text) !important;
+}
+
+.txt-color-1 {
+    color: var(--main-color) !important;
+}
+
+.txt-color-2 {
+    color: var(--second-color) !important;
+}
+
+.bg-main {
+    background-color: var(--main-color) !important;
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-size-20 {
+    font-size: 20px !important;
+}
+
+.font-size-30 {
+    font-size: 30px !important;
+}
+
+.font-size-38 {
+    font-size: 38px !important;
+}
+
+.font-size-40 {
+    font-size: 40px !important;
+}
+
+.font-size-60 {
+    font-size: 60px !important;
+    line-height: 1 !important;
+}
+
+.font-size-80 {
+    font-size: 80px !important;
+    line-height: 1 !important;
+}
+
+.font-size-110 {
+    font-size: 110px !important;
+    line-height: 1 !important;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 22px;
+    }
+    .font-size-30 {
+        font-size: calc(30px / 1.3) !important;
+    }
+    .font-size-40 {
+        font-size: calc(40px / 1.5) !important;
+    }
+    .font-size-80 {
+        font-size: calc(80px / 1.3) !important;
+    }
+    .font-size-110 {
+        font-size: calc(110px / 1.3) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .font-size-30 {
+        font-size: calc(30px / 2) !important;
+    }
+    .font-size-38 {
+        font-size: calc(38px / 2.5) !important;
+    }
+    .font-size-60 {
+        font-size: calc(60px / 2) !important;
+    }
+    .font-size-80 {
+        font-size: calc(80px / 2.2) !important;
+    }
+    .font-size-110 {
+        font-size: calc(110px / 1.8) !important;
+    }
+}
+
+.letter-space-10 {
+    letter-spacing: 10px;
+}
+
+.letter-space-15 {
+    letter-spacing: 15px;
+}
+
+.line-space {
+    line-height: 0.8;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.h-45 {
+    height: 45% !important;
+}
+
+.h-60 {
+    height: 60% !important;
+}
+
+.wh-40 {
+    width: 40%;
+    height: 40%;
+}
+
+.wh-90 {
+    width: 90%;
+    height: 90%;
+}
+
+.overlay {
+    background-color: #3b241198;
+    width: 100%;
+    height: 100%;
+}
+
+.seif-shadow {
+    box-shadow: rgba(255, 151, 82, 0.15) 0px 15px 25px, rgba(255, 173, 66, 0.05) 0px 5px 10px;
+}
+
+.round-color {
+    border: 1.5px solid var(--main-color);
+}
+
+.round-more {
+    border-radius: 12px;
+}
+
+
+/****************************************************************    Start index   *****************************************************/
+
+header {
+    z-index: 50;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-img {
+    background-image: url("../img/4madinaty 9.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.over-p span {
+    margin: 0 0 0 -2px;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.main .overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.bullet li::before {
+    content: "";
+    background-color: var(--main-color);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 16px;
+    border-top: 1px solid var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+
+/**** Start Location ****/
+
+#location {
+    background-image: url("../img/93madinaty 29.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+#location .overlay {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**** End Location ****/
+
+
+/**** Start FloorPlan ****/
+
+@media (max-width: 575.98px) {
+    #floorplan {
+        margin-top: 400px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #floorplan {
+        margin-top: 700px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #floorplan {
+        margin-top: 150px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #floorplan {
+        margin-top: 275px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #floorplan {
+        margin-top: 400px;
+    }
+}
+
+
+/**** End FloorPlan ****/
+
+
+/**** Start Footer ****/
+
+.footer-sec {
+    background-color: var(--second-color);
+}
+
+.footer-sec a {
+    text-decoration: none;
+    text-decoration-color: #fff;
+    color: #fff;
+}
+
+.footer-sec a:hover {
+    color: var(--main-color);
+}
+
+
+/**** End Footer ****/
+
+
+/****************************************************************    End index   *****************************************************/
